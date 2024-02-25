@@ -1,4 +1,4 @@
-import tv
+from tv import TV
 
 class Control:
     #Atributo
@@ -14,30 +14,30 @@ class Control:
 
     #Methods
     def turnOn(self):
-        tv.turnOn()
+        TV.turnOn()
     
     def turnOff(self):
-        tv.turnOff
-    
+        TV.turnOff
+
     def canalUp(self):
-        tv.canalUp()
+        TV.canalUp()
     
     def canalDown(self):
-        tv.canalDown
+        TV.canalDown
         
     def volumenUp(self):
-        tv.volumenUp()
+        TV.volumenUp()
     
     def volumenDown(self):
-        tv.volumenDown()
+        TV.volumenDown()
 
     def setCanal(self,canal):
-        tv.setCanal(canal)
+        TV.setCanal(canal)
     
     def setVolumen(self,volumen):
-        tv.setVolumen(volumen)
+        TV.setVolumen(volumen)
 
     def enlazar(self, tv):
-        tv.setControl(self)
+        TV.setControl(self)
         self._tv = tv 
-   
+
