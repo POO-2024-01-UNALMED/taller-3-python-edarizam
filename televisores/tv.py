@@ -1,14 +1,14 @@
 class TV:
     #Atributos
     _numTV = 0
-    def __init__(self, marca, estado, control):
+    def __init__(self, marca, estado):
         self._marca = marca
         self._canal = 1
         self._precio = 500
         self._estado = estado
         self._volumen = 1
         TV._numTV += 1
-        self._control = control
+
 
     #Getters y Setters
     def getMarca(self):
