@@ -1,13 +1,14 @@
 class TV:
     #Atributos
     _numTV = 0
-    def __init__(self, marca, estado):
+    def __init__(self, marca, estado, control):
         self._marca = marca
         self._canal = 1
         self._precio = 500
         self._estado = estado
         self._volumen = 1
         TV._numTV += 1
+        self._control = control
 
     #Getters y Setters
     def getMarca(self):
@@ -61,14 +62,18 @@ class TV:
         return self._estado
     
     def canalUp(self):
-        self.setCanal(self._canal + 1)
+        if (self._canal > 1) and (self._canal < 120):
+            self.setCanal(self._canal + 1)
     
     def canalDown(self):
-        self.setCanal(self._canal - 1)
+        if (self._canal > 1) and (self._canal < 120):
+            self.setCanal(self._canal - 1)
     
     def volumenUp(self):
-        self.setVolumen(self._volumen + 1)
+        if (self._volumen >= 0) and (self._volumen < 7):
+            self.setVolumen(self._volumen + 1)
     
     def volumenDown(self):
-        self.setVolumen(self._volumen - 1)
+        if (self._volumen > 1) and (self._volumen <= 7):
+            self.setVolumen(self._volumen - 1)
 
