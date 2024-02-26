@@ -74,6 +74,6 @@ class TV:
             self.setVolumen(self._volumen + 1)
     
     def volumenDown(self):
-        if (self._volumen > 1) and (self._volumen <= 7):
+        if (self._volumen > 0) and (self._volumen <= 7):
             self.setVolumen(self._volumen - 1)
 
