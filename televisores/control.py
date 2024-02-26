@@ -1,7 +1,7 @@
 class Control:
     #Atributo
     def __init__(self):
-        pass
+        self._tv = None
     
     #Getter y Setter
     def getTv(self):
