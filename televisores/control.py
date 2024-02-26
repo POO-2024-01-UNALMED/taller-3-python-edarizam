@@ -44,6 +44,7 @@ class Control:
             self._tv.setVolumen(volumen)
 
     def enlazar(self, tv):
-        self._tv.setControl(self)
-        self._tv = tv 
+        if self._tv:  
+            self._tv.setControl(self)
+            self._tv = tv 
 
